@@ -39,6 +39,4 @@ The folder structure is as follows:
 ├── test.py
 ├── train_celeba.py
 └── train.py
-
-
 ```
