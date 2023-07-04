@@ -17,3 +17,28 @@ The `train_celeba.py` script will train the model on the CelebA dataset download
 ```
 python train_celeba.py
 ```
+
+## Folder Structure
+
+The folder structure is as follows:
+
+```
+.
+├── celeba_dataset
+│   └── images
+│       ├── 000001.jpg
+│       ├── ...
+│       └── 202599.jpg
+├── dataset
+│   └── MNIST
+│       └── raw (downloaded dataset)
+├── weights
+│   └── (saved weights)
+├── discriminator.py
+├── generator.py
+├── test.py
+├── train_celeba.py
+└── train.py
+
+
+```

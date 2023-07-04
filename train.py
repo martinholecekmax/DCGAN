@@ -109,3 +109,7 @@ for epoch in range(NUM_EPOCHS):
                 writer_real.add_image("Real Images", img_grid_real, global_step=step)
                 writer_fake.add_image("Fake Images", img_grid_fake, global_step=step)
             step += 1
+
+    # Save model checkpoints
+    torch.save(gen.state_dict(), f"weights/gen_{epoch}.pth")
+    torch.save(disc.state_dict(), f"weights/disc_{epoch}.pth")
